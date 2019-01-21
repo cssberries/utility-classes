@@ -1,0 +1,50 @@
+/* @tailwind preflight;
+@tailwind components; */
+
+.bg-primary {
+  background-color: var(--bg-primary, #00f);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary, #f00);
+}
+
+.bg-accent {
+  background-color: var(--bg-accent, #f0f);
+}
+
+.bg-canvas {
+  background-color: var(--bg-canvas, #0ff);
+}
+
+.bg-aside {
+  background-color: var(--bg-aside, hsla(0, 0%, 93.3%, .55));
+}
+
+.bg-content {
+  background-color: var(--bg-content, #0ff);
+}
+
+.bg-success {
+  background-color: var(--bg-success, #0ff);
+}
+
+.bg-warning {
+  background-color: var(--bg-warning, #0ff);
+}
+
+.bg-error {
+  background-color: var(--bg-error, #0ff);
+}
+
+.bg-info {
+  background-color: var(--bg-info, #0ff);
+}
+
+.bg-selected {
+  background-color: var(--bg-selected, #0ff);
+}
+
+.bg-temporary {
+  background-color: var(--bg-temporary, #0ff);
+}
