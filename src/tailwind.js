@@ -2,6 +2,8 @@ const MODULARS = require("modular-values");
 const COLORS = require("cssberries-colors");
 
 let modularNames = require("modular-values/names");
+let bgColors = {};
+bgColors.aside = COLORS.generate.gradate('white', 3, .1, 1, 'alpha', 0);
 module.exports = {
     screens: {
         'sm': '576px',
@@ -59,34 +61,22 @@ module.exports = {
         'black': 900,
     },
     textColors: COLORS.generate.generateSet('strongness', 'text', '', 5),
-    backgroundColors: COLORS.generate.generateManualSet({
-        'primary': 'blue',
-        'secondary': 'red',
-        'accent': 'purple',
-        'canvas': 'cyan',
-        'aside': 'aside',
-        'content': 'cyan',
-        'success': 'cyan',
-        'warning': 'cyan',
-        'error': 'cyan',
-        'info': 'cyan',
-        'selected': 'cyan',
-        'temporary': 'cyan',
-    }),
-    // backgroundColors: {
-    //     'primary': 'var(--color-primary)',
-    //     'secondary': 'var(--color-secondary)',
-    //     'accent': 'var(--color-accent)',
-    //     'canvas': 'var(--color-canvas)',
-    //     'aside': 'var(--color-aside)',
-    //     'content': 'var(--color-content)',
-    //     'success': 'var(--color-success)',
-    //     'warning': 'var(--color-warning)',
-    //     'error': 'var(--color-error)',
-    //     'info': 'var(--color-info)',
-    //     'selected': 'var(--color-selected)',
-    //     'temporary': 'var(--color-info)'
-    // },
+    // backgroundColors: COLORS.generate.generateManualSet({
+    //     'primary': 'blue',
+    //     'secondary': 'red',
+    //     'accent': 'purple',
+    //     'canvas': 'gradate, white, 3, .1, 1, darken, 0',
+    //     'aside': ['gradate', 'white', 3, .1, 1, 'darken', 1],
+    //     'content': ['gradate', 'white', 3, .1, 1, 'darken', 2],
+    //     'success': 'green',
+    //     'warning': 'orange',
+    //     'error': 'red',
+    //     'info': 'cyan',
+    //     'selected': 'cyan',
+    //     'temporary': 'cyan'
+    // }),
+    backgroundColors: bgColors,
+
     backgroundSize: {
         'auto': 'auto',
         'cover': 'cover',

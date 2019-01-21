@@ -16,7 +16,7 @@
   "scripts": {
     "i": "node \"./scripts/install.js\"",
     "generate": "./node_modules/.bin/tailwind build src/main.css -c src/tailwind.js  -o dist/utility-classes.css",
-    "watch:js": "onchange -v \"src/**/*\" -- npm run generate"
+    "watch": "onchange -v \"src/**/*\" -- npm run generate"
   },
   "repository": {
     "type": "git",

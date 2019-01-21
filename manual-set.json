@@ -1,0 +1,6 @@
+{
+    "content": "var(--bg-content,undefined)",
+    "aside": "var(--bg-aside,undefined)",
+    "canvas": "var(--bg-canvas,undefined)",
+    "primary": "var(--bg-primary,#0000FF)"
+}
